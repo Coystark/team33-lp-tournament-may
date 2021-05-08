@@ -6,6 +6,7 @@ import { Menu } from '@/components/index';
 import {
   Layer1,
   Layer2,
+  Layer3,
   Layer4,
   Layer5,
   Layer6,
@@ -31,6 +32,7 @@ export default function Home() {
       <ThemeProvider theme={theme}>
         <Layer1 />
         <Layer2 />
+        <Layer3 />
         <Layer4 />
         <Layer5 />
         <Layer6 />

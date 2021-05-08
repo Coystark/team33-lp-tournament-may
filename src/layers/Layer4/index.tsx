@@ -49,7 +49,7 @@ const Layer4: React.FC = () => (
               </div>
             </RewardsItemContainer>
           </RewardsColumn>
-          <div>
+          <RewardsColumn>
             <RewardsItemContainer>
               <RewardsItemImg src="/images/tmp_icon_rank.png" />
               <div>
@@ -71,7 +71,7 @@ const Layer4: React.FC = () => (
                 <RewardsItemValue>$100</RewardsItemValue>
               </div>
             </RewardsItemContainer>
-          </div>
+          </RewardsColumn>
         </RewardsContainer>
         <Title>TOP 2 GRAND FINALE</Title>
         <GrandFinaleContainer>
