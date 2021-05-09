@@ -2,10 +2,9 @@ import { Title as _Title } from '@/components/index';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 1700px;
+  max-width: 1500px;
   margin: 90px 20px 90px 20px;
   width: 100%;
-  min-height: 100vh;
   display: flex;
   justify-content: space-between;
 
@@ -16,7 +15,7 @@ export const Container = styled.div`
 `;
 
 export const Root = styled.div`
-  background-color: grey;
+  background-color: #3f0d62;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -72,6 +71,7 @@ export const RankBadge = styled.div`
 `;
 
 export const RankPlace = styled.div`
+  font-family: 'Source Sans Pro', sans-serif;
 `;
 
 export const RankPoints = styled.div`

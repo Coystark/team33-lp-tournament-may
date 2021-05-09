@@ -5,7 +5,6 @@ export const Container = styled.div`
   max-width: 1500px;
   margin: 90px 20px 90px 20px;
   width: 100%;
-  min-height: 100vh;
   display: flex;
 
   @media(max-width: 768px) {
@@ -14,28 +13,30 @@ export const Container = styled.div`
 `;
 
 export const Root = styled.div`
-  background-color: purple;
+  background-color: #3f0d62;
   display: flex;
   justify-content: center;
   width: 100%;
 `;
 
 export const QualifiersContainer = styled.div`
-
+  width: 100%;
 `;
 
-export const RewardsContainer = styled.div`
+export const QualifiersDescription = styled.p`
+  font-family: 'Source Sans Pro', sans-serif;
+`;
+
+export const RewardsGridContainer = styled.div`
   margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
-
+  
   @media(max-width: 480px) {
-    justify-content: space-around;
+    justify-content: space-between;
+
   }
 
-  @media(max-width: 768px) {
-    justify-content: space-between;
-  }
 
   & > div:first-child {
     margin-right: 120px;
@@ -47,40 +48,38 @@ export const RewardsContainer = styled.div`
 
 `;
 
-export const RewardsColumn = styled.div`
+export const RewardsGridItem = styled.div`
 `;
 
-export const RewardsItemContainer = styled.div`
+export const Reward = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
 
   @media(max-width: 480px) {
     flex-direction: column;
+    text-align: center;
   }
 `;
 
-export const RewardsItemImg = styled.img`
+export const RewardBadge = styled.img`
   padding-right: 30px;
-  height: 110px;
+  align-self: start;
 
   @media(max-width: 480px) {
     padding-right: 0;
+    align-self: center;
+    margin-bottom: 10px;
   }
 `;
 
-export const RewardsItemTitle = styled.div`
-  @media(max-width: 480px) {
-    text-align: center;
-  }
+export const RewardTitle = styled.div`
+  font-family: 'Source Sans Pro', sans-serif;
 `;
 
-export const RewardsItemValue = styled.div`
+export const RewardCash = styled.div`
   font-size: 25px;
   font-weight: bold;
-  @media(max-width: 480px) {
-    text-align: center;
-  }
 `;
 
 export const GrandFinaleContainer = styled.div`
@@ -94,7 +93,7 @@ export const GrandFinaleContainer = styled.div`
 `;
 
 export const GrandFinaleImg = styled.img`
-  height: 110px;
+  align-self: center;
 `;
 
 export const GrandFinaleTitle = styled(Title)`
@@ -112,15 +111,38 @@ export const GivewayContainer = styled.div`
     margin-top: 60px;
     align-items: flex-start;
   }
-
 `;
 
 export const GivewayDescription = styled.p`
   font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
 `;
 
 export const GivewayImg = styled.img`
   height: auto;
   max-width: 100%;
-  margin: 50px 0 50px 0;
+`;
+
+export const GivewayBottom = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+
+  @media(max-width: 480px) {
+    flex-direction: column;
+  }
+`;
+
+export const GivewayButton = styled.a`
+`;
+
+export const GivewayCorsairLogo = styled.img`
+  height: auto;
+  max-width: 100%;
+
+  @media(max-width: 480px) {
+    margin-bottom: 30px;
+    order: -1;
+  }
 `;

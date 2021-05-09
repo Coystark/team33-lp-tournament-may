@@ -8,10 +8,9 @@ export const Container = styled.div`
 `;
 
 export const Root = styled.div`
-  background-color: grey;
+  background-color: #3f0d62;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
 `;
@@ -36,6 +35,7 @@ export const Question = styled.div`
 
 export const Answer = styled.div`
   padding-bottom: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
 `;
 
 export const ViewMore = styled.div`

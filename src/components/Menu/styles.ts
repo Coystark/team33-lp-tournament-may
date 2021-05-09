@@ -5,7 +5,7 @@ export const Root = styled.div<ILogo>`
   display: flex;
   justify-content: space-between;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   padding: ${(props) => (props.scrolled ? '10px 120px 10px 120px' : '40px 90px 40px 90px')};
   width: 100%;
   background-color: ${(props) => (props.scrolled ? '#00000066' : 'none')};

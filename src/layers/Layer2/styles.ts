@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { PogText } from '@/components/index';
 
 export const Root = styled.div`
-  min-height: 100vh;
   width: 100%;
   background-color: black;
   display: flex;
@@ -12,8 +11,8 @@ export const Root = styled.div`
   padding: 90px 0 90px 0;
   text-align: center;
 
-  @media(max-width: 480px) {
-    padding: 90px 10px 90px 10px;
+  @media(max-width: 768px) {
+    padding: 90px 20px 90px 20px;
   }
 `;
 
@@ -29,6 +28,7 @@ export const Title = styled.div`
 
 export const Description = styled.div`
   padding: 30px 0 0 0;
+  font-family: 'Source Sans Pro', sans-serif;
 `;
 
 export const CardsContainer = styled.div`
@@ -62,10 +62,10 @@ export const CardHeader = styled.div`
 `;
 
 export const CardValue = styled(PogText)`
-  margin: -20px 0 -20px 0;
 
   @media(max-width: 480px) {
-    font-size: 55px;
+    font-size: 50px;
+    
   }
 `;
 

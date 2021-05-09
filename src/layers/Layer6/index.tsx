@@ -1,4 +1,9 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faDiscord, faFacebookF, faInstagram, faYoutube, faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
+
 import {
   Container,
   Root,
@@ -19,13 +24,25 @@ const Layer6: React.FC = () => (
       <SocialMediasContainer>
         <SocialMediasTitle>Connect with Team33</SocialMediasTitle>
         <SocialMediasIconsContainer>
-          <SocialMediasIcon>face</SocialMediasIcon>
-          <SocialMediasIcon>twitter</SocialMediasIcon>
-          <SocialMediasIcon>discord</SocialMediasIcon>
+          <SocialMediasIcon href="/#">
+            <FontAwesomeIcon icon={faFacebookF} />
+          </SocialMediasIcon>
+          <SocialMediasIcon href="/#">
+            <FontAwesomeIcon icon={faTwitter} />
+          </SocialMediasIcon>
+          <SocialMediasIcon href="/#">
+            <FontAwesomeIcon icon={faInstagram} />
+          </SocialMediasIcon>
+          <SocialMediasIcon href="/#">
+            <FontAwesomeIcon icon={faDiscord} />
+          </SocialMediasIcon>
+          <SocialMediasIcon href="/#">
+            <FontAwesomeIcon icon={faYoutube} />
+          </SocialMediasIcon>
         </SocialMediasIconsContainer>
       </SocialMediasContainer>
       <SponsorsContainer>
-        <SponsorsTitle>Powered by</SponsorsTitle>
+        <SponsorsTitle>Powered By</SponsorsTitle>
         <Sponsors src="/images/sponsors.png" />
       </SponsorsContainer>
       <LogoContainer>

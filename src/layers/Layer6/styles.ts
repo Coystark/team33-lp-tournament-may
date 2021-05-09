@@ -40,31 +40,26 @@ export const SocialMediasTitle = styled.div`
 
 export const SocialMediasIconsContainer = styled.div`
   display: flex;
-  @media(max-width: 768px) {
-    justify-content: center;
-  }
+  justify-content: space-around;
 `;
 
-export const SocialMediasIcon = styled.div`
-  margin-right: 8px;
+export const SocialMediasIcon = styled.a`
+  display: flex;
+  height: 30px;
+  width: 30px;
 `;
 
 /**
  * Sponsors
  */
-
 export const SponsorsContainer = styled.div`
 `;
 
 export const SponsorsTitle = styled.div`
   font-size: 25px;
-  font-weight: bold;
   padding-bottom: 20px;
-
-  @media(max-width: 768px) {
-    text-align: center;
-  }
-
+  color: grey;
+  text-align: center;
 `;
 
 export const Sponsors = styled.img`

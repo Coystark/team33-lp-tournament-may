@@ -1,22 +1,26 @@
 import React from 'react';
-import { Title } from '@/components/index';
+import { Button, Title } from '@/components/index';
 
 import {
   Root,
   Container,
   QualifiersContainer,
-  RewardsContainer,
-  RewardsColumn,
-  RewardsItemContainer,
-  RewardsItemImg,
-  RewardsItemTitle,
-  RewardsItemValue,
+  QualifiersDescription,
+  RewardsGridContainer,
+  RewardsGridItem,
+  Reward,
+  RewardBadge,
+  RewardTitle,
+  RewardCash,
   GrandFinaleContainer,
   GrandFinaleImg,
   GrandFinaleTitle,
   GivewayContainer,
   GivewayDescription,
   GivewayImg,
+  GivewayBottom,
+  GivewayButton,
+  GivewayCorsairLogo,
 } from './styles';
 
 const Layer4: React.FC = () => (
@@ -24,58 +28,60 @@ const Layer4: React.FC = () => (
     <Container>
       <QualifiersContainer>
         <Title>Qualifiers</Title>
-        <p>All prize amounts will be split evenly between both players</p>
-        <RewardsContainer>
-          <RewardsColumn>
-            <RewardsItemContainer>
-              <RewardsItemImg src="/images/tmp_icon_rank.png" />
+        <QualifiersDescription>
+          All prize amounts will be split evenly between both players
+        </QualifiersDescription>
+        <RewardsGridContainer>
+          <RewardsGridItem>
+            <Reward>
+              <RewardBadge src="/images/badges/1st.png" alt="1st" />
               <div>
-                <RewardsItemTitle>Cash Prize</RewardsItemTitle>
-                <RewardsItemValue>$700</RewardsItemValue>
+                <RewardTitle>Cash Prize</RewardTitle>
+                <RewardCash>$700</RewardCash>
               </div>
-            </RewardsItemContainer>
-            <RewardsItemContainer>
-              <RewardsItemImg src="/images/tmp_icon_rank.png" />
+            </Reward>
+            <Reward>
+              <RewardBadge src="/images/badges/2nd.png" alt="2nd" />
               <div>
-                <RewardsItemTitle>Cash Prize</RewardsItemTitle>
-                <RewardsItemValue>$450</RewardsItemValue>
+                <RewardTitle>Cash Prize</RewardTitle>
+                <RewardCash>$450</RewardCash>
               </div>
-            </RewardsItemContainer>
-            <RewardsItemContainer>
-              <RewardsItemImg src="/images/tmp_icon_rank.png" />
+            </Reward>
+            <Reward>
+              <RewardBadge src="/images/badges/3rd.png" alt="3rd" />
               <div>
-                <RewardsItemTitle>Cash Prize</RewardsItemTitle>
-                <RewardsItemValue>$300</RewardsItemValue>
+                <RewardTitle>Cash Prize</RewardTitle>
+                <RewardCash>$300</RewardCash>
               </div>
-            </RewardsItemContainer>
-          </RewardsColumn>
-          <RewardsColumn>
-            <RewardsItemContainer>
-              <RewardsItemImg src="/images/tmp_icon_rank.png" />
+            </Reward>
+          </RewardsGridItem>
+          <RewardsGridItem>
+            <Reward>
+              <RewardBadge src="/images/badges/4th.png" alt="4th" />
               <div>
-                <RewardsItemTitle>Cash Prize</RewardsItemTitle>
-                <RewardsItemValue>$200</RewardsItemValue>
+                <RewardTitle>Cash Prize</RewardTitle>
+                <RewardCash>$200</RewardCash>
               </div>
-            </RewardsItemContainer>
-            <RewardsItemContainer>
-              <RewardsItemImg src="/images/tmp_icon_rank.png" />
+            </Reward>
+            <Reward>
+              <RewardBadge src="/images/badges/5th.png" alt="5th" />
               <div>
-                <RewardsItemTitle>Cash Prize</RewardsItemTitle>
-                <RewardsItemValue>$150</RewardsItemValue>
+                <RewardTitle>Cash Prize</RewardTitle>
+                <RewardCash>$150</RewardCash>
               </div>
-            </RewardsItemContainer>
-            <RewardsItemContainer>
-              <RewardsItemImg src="/images/tmp_icon_rank.png" />
+            </Reward>
+            <Reward>
+              <RewardBadge src="/images/badges/6-10.png" alt="6-10" />
               <div>
-                <RewardsItemTitle>Cash Prize</RewardsItemTitle>
-                <RewardsItemValue>$100</RewardsItemValue>
+                <RewardTitle>Cash Prize</RewardTitle>
+                <RewardCash>$100</RewardCash>
               </div>
-            </RewardsItemContainer>
-          </RewardsColumn>
-        </RewardsContainer>
+            </Reward>
+          </RewardsGridItem>
+        </RewardsGridContainer>
         <Title>TOP 2 GRAND FINALE</Title>
         <GrandFinaleContainer>
-          <GrandFinaleImg src="/images/tmp_icon_rank.png" />
+          <GrandFinaleImg src="/images/badges/1v1.png" alt="1v1" />
           <GrandFinaleTitle>WINNER: $1,000</GrandFinaleTitle>
         </GrandFinaleContainer>
       </QualifiersContainer>
@@ -84,7 +90,13 @@ const Layer4: React.FC = () => (
         <GivewayDescription>
           Watch the tournament for a chance to win
         </GivewayDescription>
-        <GivewayImg src="/images/tmp_giveway.png" />
+        <GivewayImg src="/images/giveway-bg.png" alt="Giveaway" />
+        <GivewayBottom>
+          <GivewayButton href="/#">
+            <Button style={{ display: 'inline-block' }}>Giveaway Rules</Button>
+          </GivewayButton>
+          <GivewayCorsairLogo src="images/corsair.png" alt="Corsair" />
+        </GivewayBottom>
       </GivewayContainer>
     </Container>
   </Root>
