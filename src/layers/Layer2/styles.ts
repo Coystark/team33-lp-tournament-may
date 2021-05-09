@@ -4,7 +4,7 @@ import { PogText } from '@/components/index';
 
 export const Root = styled.div`
   width: 100%;
-  background-color: black;
+  background-color: #3f0d62;
   display: flex;
   flex-direction: column;
   align-items: center;

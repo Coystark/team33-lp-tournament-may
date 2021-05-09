@@ -6,7 +6,6 @@ export const Container = styled.div`
   margin: 90px 20px 90px 20px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
 
   @media(max-width:  1445px) {
     flex-direction: column;
@@ -24,6 +23,27 @@ export const Root = styled.div`
     #stagesArrow {
       display: none;
     }
+  }
+`;
+
+export const BigTitle = styled.div`
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 0px 0px 8px rgb(255 0 0 / 75%);
+
+  @media(max-width: 480px) {
+    font-size: 40px;
+    text-align: center;
+  }
+`;
+
+export const Description = styled.div`
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  @media(max-width: 480px) {
+    text-align: center;
   }
 `;
 
@@ -50,6 +70,10 @@ export const StagesGrid = styled.div`
   @media(max-width: 768px) {
     flex-direction: column;
     align-items: center;
+
+    #stage3 {
+      order: -1;
+    }
   }
 `;
 
@@ -58,49 +82,88 @@ export const StageGridImg = styled.img`
   height: auto;
 `;
 
-export const Rank = styled.div`
+/**
+ * Grid placement
+ */
+
+export const PlacementRoot = styled.div`
   display: flex;
-  margin-top: 40px;
+  width: 100%;
+  flex-direction: column;
 `;
 
-export const RankBadge = styled.div`
-  width: 89px;
-  margin-right: 30px;
-  justify-content: center;
-  display: flex;
-`;
-
-export const RankPlace = styled.div`
-  font-family: 'Source Sans Pro', sans-serif;
-`;
-
-export const RankPoints = styled.div`
-  font-size: 25px;
-  font-weight: bold;
+export const PlacementTitle = styled(_Title)`
+  text-align: center;
+  padding-bottom: 30px;
 `;
 
 export const PlacementContainer = styled.div`
+  margin-left: 150px;
+  display: flex;
+  width: 100%;
+
+  @media(max-width:  1445px) {
+    margin-left: 0;
+    justify-content: space-around;
+  }
+
+  @media(max-width:  480px) {
+    margin-left: 0;
+    justify-content: space-between;
+  }
+
+`;
+
+export const PlacementItem = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media(max-width:  1445px) {
+  @media(max-width: 480px) {
+    margin: 0!important;
+  }
+`;
+
+export const PlacementBadge = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  justify-content: center;
+
+  @media(max-width: 480px) {
+    flex-direction: column;
     text-align: center;
   }
 `;
 
-export const GridPlacementContainer = styled.div`
-  display: flex;
+export const PlacementBadgeIcon = styled.img`
+  align-self: center;
+  padding-right: 30px;
 
-  @media(max-width: 768px) {
-    flex-direction: column;
-    align-items: space-around;
-
+  @media(max-width: 480px) {
+    padding-right: 0;
+    margin-bottom: 20px;
   }
 `;
 
-export const GridPlacementItem = styled.div`
-  @media(max-width: 768px) {
-    margin: 0!important;
+export const PlacementBadgeDescription = styled.div`
+  font-family: 'Source Sans Pro', sans-serif;
+`;
+
+export const PlacementBadgePoints = styled.div`
+  font-size: 25px;
+  font-weight: bold;
+`;
+
+export const PlacementBottom = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 150px;
+  margin-top: 30px;
+
+  @media(max-width: 480px) {
+    margin-left: 0;
+    align-items: center;
   }
 `;
 

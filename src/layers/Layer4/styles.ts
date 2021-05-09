@@ -129,7 +129,7 @@ export const GivewayBottom = styled.div`
   justify-content: space-around;
   align-items: center;
 
-  @media(max-width: 480px) {
+  @media(max-width: 1200px) {
     flex-direction: column;
   }
 `;
@@ -141,7 +141,7 @@ export const GivewayCorsairLogo = styled.img`
   height: auto;
   max-width: 100%;
 
-  @media(max-width: 480px) {
+  @media(max-width: 1200px) {
     margin-bottom: 30px;
     order: -1;
   }
