@@ -24,29 +24,29 @@ const Layer6: React.FC = () => (
       <SocialMediasContainer>
         <SocialMediasTitle>Connect with Team33</SocialMediasTitle>
         <SocialMediasIconsContainer>
-          <SocialMediasIcon href="/#">
+          <SocialMediasIcon href="https://facebook.com/team33gaming" target="_blank">
             <FontAwesomeIcon icon={faFacebookF} />
           </SocialMediasIcon>
-          <SocialMediasIcon href="/#">
+          <SocialMediasIcon href="https://twitter.com/OfficialTeam33" target="_blank">
             <FontAwesomeIcon icon={faTwitter} />
           </SocialMediasIcon>
-          <SocialMediasIcon href="/#">
+          <SocialMediasIcon href="https://instagram.com/OfficialTeam33" target="_blank">
             <FontAwesomeIcon icon={faInstagram} />
           </SocialMediasIcon>
-          <SocialMediasIcon href="/#">
+          <SocialMediasIcon href="https://discord.gg/nFQZZXR6BC" target="_blank">
             <FontAwesomeIcon icon={faDiscord} />
           </SocialMediasIcon>
-          <SocialMediasIcon href="/#">
+          <SocialMediasIcon href="https://www.youtube.com/channel/UCNGE38pgiQy6Gigd1vYBjVg" target="_blank">
             <FontAwesomeIcon icon={faYoutube} />
           </SocialMediasIcon>
         </SocialMediasIconsContainer>
       </SocialMediasContainer>
       <SponsorsContainer>
         <SponsorsTitle>Powered By</SponsorsTitle>
-        <Sponsors src="/images/sponsors.png" />
+        <Sponsors src="/images/sponsors.png" alt="Sponsors" />
       </SponsorsContainer>
       <LogoContainer>
-        <Logo src="/images/team33-negative.png" />
+        <Logo src="/images/team33-negative.png" alt="Team 33 negative logo" />
       </LogoContainer>
     </Container>
   </Root>

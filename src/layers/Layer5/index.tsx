@@ -1,6 +1,7 @@
+import Title from '@/components/Title';
 import React, { useState } from 'react';
 import {
-  Container, Root, Title, Question, Answer, HR, Button, ViewMore, ContainerQuestions,
+  Container, Root, Question, Answer, HR, Button, ViewMore, ContainerQuestions,
 } from './styles';
 
 const faq = [
@@ -32,7 +33,7 @@ const Layer5: React.FC = () => {
   return (
     <Root>
       <Container>
-        <Title>FAQs</Title>
+        <Title medium>FAQs</Title>
         <Question>{faq[0].question}</Question>
         <Answer>{faq[0].answer}</Answer>
         <Question>{faq[1].question}</Question>
@@ -51,7 +52,7 @@ const Layer5: React.FC = () => {
             <Answer>Sure, Jump into our Discord and drop us a line.</Answer>
           </>
         )}
-        <Button>Join the Official Discord</Button>
+        <Button href="https://discord.gg/nFQZZXR6BC" target="_blank">Join the Official Discord</Button>
       </Container>
     </Root>
   );

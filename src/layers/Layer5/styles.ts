@@ -45,11 +45,6 @@ export const Root = styled.div`
   }
 `;
 
-export const Title = styled.div`
-  font-size: 30px;
-  font-weight: bold;
-`;
-
 export const ContainerQuestions = styled.div<IContainerQuestionsProps>`
   transition: opacity 1s ease-out;
   opacity: ${(props) => (props.show ? '1' : '0')};
@@ -86,7 +81,7 @@ export const HR = styled.div`
   margin: 50px 0 50px 0;
 `;
 
-export const Button = styled.div`
+export const Button = styled.a`
   padding: 20px 40px 20px 40px;
   border-radius: 20px;
   border: solid #7e2ec3 2px;
