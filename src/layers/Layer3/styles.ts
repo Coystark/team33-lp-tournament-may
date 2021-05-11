@@ -49,9 +49,12 @@ export const HeaderTitle = styled(_Title)`
   @media(max-width:  1445px) {
     text-align: center;
   }
+`;
 
-  @media(max-width: 768px) {
-    text-align: left;
+export const Title = styled(_Title)`
+  padding-bottom: 30px;
+  @media(max-width:  1445px) {
+    text-align: center;
   }
 `;
 
@@ -60,7 +63,7 @@ export const Description = styled.div`
   margin-top: 10px;
   margin-bottom: 30px;
 
-  @media(max-width: 480px) {
+  @media(max-width:  1445px) {
     text-align: center;
   }
 `;
@@ -169,13 +172,6 @@ export const PlacementBadgePoints = styled.div`
 export const PlacementBottom = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 20px;
   align-items: center;
-`;
-
-export const Title = styled(_Title)`
-  padding-bottom: 30px;
-  @media(max-width: 480px) {
-    text-align: center;
-  }
 `;

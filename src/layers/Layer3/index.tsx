@@ -177,7 +177,7 @@ const Layer3: React.FC = () => (
                   <PlacementBadgePoints>+2 Point</PlacementBadgePoints>
                 </div>
               </PlacementBadge>
-              <Button style={{ marginTop: 30 }}>View full rules</Button>
+              <Button>View full rules</Button>
             </PlacementBottom>
           </PlacementContainer>
 
