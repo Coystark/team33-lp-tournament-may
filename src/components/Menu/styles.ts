@@ -16,11 +16,17 @@ export const Root = styled.div<ILogo>`
    justify-content: center;
    padding: 40px 0 40px 0;
   }
+
+  & img {
+    width: ${(props) => (props.scrolled ? '70px' : '120px')};;
+  }
 `;
 
 export const Logo = styled.img`
   width: 120px;
   height: auto;
+  transition: 0.5s;
+
 
   @media(max-width: 480px) {
     display: none;

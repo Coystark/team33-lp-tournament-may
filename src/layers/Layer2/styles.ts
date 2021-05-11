@@ -4,8 +4,7 @@ import { PogText } from '@/components/index';
 
 export const Root = styled.div`
   width: 100%;
-  min-height: 100vh;
-  // background-color: #3f0d62;
+  min-height: 1080px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,18 +20,10 @@ export const Root = styled.div`
   background-repeat: no-repeat;
   background-position: center center;
 
-
-  min-height: 1080px;
-`;
-
-export const Title = styled.div`
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: 0px 0px 8px rgb(255 0 0 / 75%);
-
-  @media(max-width: 480px) {
-    font-size: 40px;
+  @media(max-width: 768px) {
+    background: #4d0c66;
   }
+
 `;
 
 export const Description = styled.div`
@@ -80,7 +71,7 @@ export const CardValue = styled(PogText)`
 
 export const CardDescription = styled.div`
   font-weight: 300;
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-size: 20px;
 `;
 
@@ -99,7 +90,7 @@ export const SponsorsTitle = styled.div`
 
 export const SponsorsCard = styled.div`
   border-radius: 15px;
-  background-color: #ffffff4D;
+  background-color: #0000004D;
 `;
 
 export const Sponsors = styled.img`

@@ -10,8 +10,9 @@ const PogText = styled.div`
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  /*background-image: linear-gradient(180deg, #ba5beb 28.91%, #803aa4 88.28%);*/
-  background-image: linear-gradient(180deg, #FFE6CC 28.91%, #FF7242 88.28%);
+  //background-image: linear-gradient(180deg, #ba5beb 28.91%, #803aa4 88.28%);
+  //background-image: linear-gradient(180deg, #FFE6CC 28.91%, #FF7242 88.28%);
+  background-image: linear-gradient(180deg, rgb(219 58 255) 28.91%, rgb(215 131 239) 88.28%);
   text-align: center;
 
   &:after {
@@ -23,7 +24,7 @@ const PogText = styled.div`
     z-index: -1;
     position: absolute;
     //text-shadow: 0px 0px 8px #c663da;
-    text-shadow: 0px 0px 8px red;
+    text-shadow: 0px 0px 8px #e900ff;
   }
 `;
 

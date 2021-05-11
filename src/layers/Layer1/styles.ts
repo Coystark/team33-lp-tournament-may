@@ -37,3 +37,10 @@ export const TournamentLogo = styled.img`
     padding: 0 20px 0 20px;
   }
 `;
+
+export const ContainerVideo = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+`;

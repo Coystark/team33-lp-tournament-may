@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
-  Root, InsideVideo, FortniteLogo, TournamentLogo,
+  Root, InsideVideo, FortniteLogo, TournamentLogo, ContainerVideo,
 } from './styles';
 
 const Layer1: React.FC = () => (
@@ -15,23 +15,20 @@ const Layer1: React.FC = () => (
     />
 
     <InsideVideo>
-      <TournamentLogo
-        src="/images/tournament-logo.png"
-      />
-      <FortniteLogo src="/images/fortnite.png" />
+      <ContainerVideo>
+        <TournamentLogo
+          src="/images/tournament-logo.png"
+        />
+        <FortniteLogo src="/images/fortnite.png" />
+      </ContainerVideo>
 
-      <div
-        style={{
-          height: '100%',
-          width: '100%',
-          position: 'absolute',
-          display: 'flex',
-          justifyContent: 'flex-end',
-          alignItems: 'flex-end',
-          marginBottom: 81,
-        }}
+      <div style={{
+        height: '100%',
+        width: '100%',
+        display: 'flex',
+        alignItems: 'flex-end',
+      }}
       >
-
         <div style={{
           background: "url('/images/complement-layer1.png')",
           backgroundPosition: 'center center',
@@ -41,7 +38,6 @@ const Layer1: React.FC = () => (
           height: '130px',
         }}
         />
-
       </div>
     </InsideVideo>
 

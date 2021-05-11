@@ -39,11 +39,9 @@ export const RewardsGridContainer = styled.div`
   margin-bottom: 50px;
   display: flex;
   
-  @media(max-width: 480px) {
-    justify-content: space-between;
-
+  @media(max-width: 768px) {
+    justify-content: space-around;
   }
-
 
   & > div:first-child {
     margin-right: 120px;
@@ -112,8 +110,13 @@ export const GivewayContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
 
   @media(max-width: 768px) {
+    text-align: left;
+
     margin-left: 0;
     margin-top: 60px;
     align-items: flex-start;

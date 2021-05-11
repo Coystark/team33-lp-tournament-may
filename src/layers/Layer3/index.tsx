@@ -11,13 +11,14 @@ import {
   PlacementRoot,
   PlacementTitle,
   PlacementContainer,
+  PlacementAllItems,
   PlacementItem,
   PlacementBadge,
   PlacementBadgeIcon,
   PlacementBadgeDescription,
   PlacementBadgePoints,
   PlacementBottom,
-  BigTitle,
+  HeaderTitle,
   Description,
 } from './styles';
 
@@ -25,7 +26,8 @@ const Layer3: React.FC = () => (
   <Root>
     <Container>
       <div>
-        <BigTitle>Scoring & Rules</BigTitle>
+
+        <HeaderTitle medium>Scoring & Rules</HeaderTitle>
         <Description>
           The top 10 teams from each qualifier will advance to
           the serie&apos;s broadcasted Finale to compete alongside 10 invited teams.
@@ -78,105 +80,106 @@ const Layer3: React.FC = () => (
         </StagesContainer>
       </div>
       <PlacementRoot>
-        <PlacementTitle>Placement</PlacementTitle>
-
         <PlacementContainer>
-
-          <PlacementItem style={{ marginRight: 120 }}>
+          <PlacementTitle>Placement</PlacementTitle>
+          <PlacementAllItems>
+            <PlacementItem>
+              <PlacementBadge>
+                <PlacementBadgeIcon src="/images/badges/1st.png" alt="Rank" />
+                <div>
+                  <PlacementBadgeDescription>1st Place</PlacementBadgeDescription>
+                  <PlacementBadgePoints>+6 Point</PlacementBadgePoints>
+                </div>
+              </PlacementBadge>
+              <PlacementBadge>
+                <PlacementBadgeIcon src="/images/badges/2nd.png" alt="Rank" />
+                <div>
+                  <PlacementBadgeDescription>2nd Place</PlacementBadgeDescription>
+                  <PlacementBadgePoints>+4 Point</PlacementBadgePoints>
+                </div>
+              </PlacementBadge>
+              <PlacementBadge>
+                <PlacementBadgeIcon src="/images/badges/3rd.png" alt="Rank" />
+                <div>
+                  <PlacementBadgeDescription>3rd Place</PlacementBadgeDescription>
+                  <PlacementBadgePoints>+3 Point</PlacementBadgePoints>
+                </div>
+              </PlacementBadge>
+              <PlacementBadge>
+                <PlacementBadgeIcon src="/images/badges/4th.png" alt="Rank" />
+                <div>
+                  <PlacementBadgeDescription>4th Place</PlacementBadgeDescription>
+                  <PlacementBadgePoints>+2 Point</PlacementBadgePoints>
+                </div>
+              </PlacementBadge>
+              <PlacementBadge>
+                <PlacementBadgeIcon src="/images/badges/5th.png" alt="Rank" />
+                <div>
+                  <PlacementBadgeDescription>5th Place</PlacementBadgeDescription>
+                  <PlacementBadgePoints>+2 Point</PlacementBadgePoints>
+                </div>
+              </PlacementBadge>
+            </PlacementItem>
+            <PlacementItem>
+              <PlacementBadge>
+                <PlacementBadgeIcon src="/images/badges/6th.png" alt="Rank" />
+                <div>
+                  <PlacementBadgeDescription>6st Place</PlacementBadgeDescription>
+                  <PlacementBadgePoints>+2 Point</PlacementBadgePoints>
+                </div>
+              </PlacementBadge>
+              <PlacementBadge>
+                <PlacementBadgeIcon src="/images/badges/7th.png" alt="Rank" />
+                <div>
+                  <PlacementBadgeDescription>7th Place</PlacementBadgeDescription>
+                  <PlacementBadgePoints>+1 Point</PlacementBadgePoints>
+                </div>
+              </PlacementBadge>
+              <PlacementBadge>
+                <PlacementBadgeIcon src="/images/badges/8th.png" alt="Rank" />
+                <div>
+                  <PlacementBadgeDescription>8th Place</PlacementBadgeDescription>
+                  <PlacementBadgePoints>+1 Point</PlacementBadgePoints>
+                </div>
+              </PlacementBadge>
+              <PlacementBadge>
+                <PlacementBadgeIcon src="/images/badges/9th.png" alt="Rank" />
+                <div>
+                  <PlacementBadgeDescription>9th Place</PlacementBadgeDescription>
+                  <PlacementBadgePoints>+1 Point</PlacementBadgePoints>
+                </div>
+              </PlacementBadge>
+              <PlacementBadge>
+                <PlacementBadgeIcon src="/images/badges/10th.png" alt="Rank" />
+                <div>
+                  <PlacementBadgeDescription>10th Place</PlacementBadgeDescription>
+                  <PlacementBadgePoints>+1 Point</PlacementBadgePoints>
+                </div>
+              </PlacementBadge>
+              <PlacementBadge>
+                <PlacementBadgeIcon src="/images/badges/15th.png" alt="Rank" />
+                <div>
+                  <PlacementBadgeDescription>15th Place</PlacementBadgeDescription>
+                  <PlacementBadgePoints>+1 Point</PlacementBadgePoints>
+                </div>
+              </PlacementBadge>
+            </PlacementItem>
+          </PlacementAllItems>
+          <PlacementBottom>
+            <Title>Gameplay scoring</Title>
             <PlacementBadge>
-              <PlacementBadgeIcon src="/images/badges/1st.png" alt="Rank" />
+              <PlacementBadgeIcon src="/images/badges/Elimi.png" alt="Rank" />
               <div>
-                <PlacementBadgeDescription>1st Place</PlacementBadgeDescription>
-                <PlacementBadgePoints>+6 Point</PlacementBadgePoints>
-              </div>
-            </PlacementBadge>
-            <PlacementBadge>
-              <PlacementBadgeIcon src="/images/badges/2nd.png" alt="Rank" />
-              <div>
-                <PlacementBadgeDescription>2nd Place</PlacementBadgeDescription>
-                <PlacementBadgePoints>+4 Point</PlacementBadgePoints>
-              </div>
-            </PlacementBadge>
-            <PlacementBadge>
-              <PlacementBadgeIcon src="/images/badges/3rd.png" alt="Rank" />
-              <div>
-                <PlacementBadgeDescription>3rd Place</PlacementBadgeDescription>
-                <PlacementBadgePoints>+3 Point</PlacementBadgePoints>
-              </div>
-            </PlacementBadge>
-            <PlacementBadge>
-              <PlacementBadgeIcon src="/images/badges/4th.png" alt="Rank" />
-              <div>
-                <PlacementBadgeDescription>4th Place</PlacementBadgeDescription>
+                <PlacementBadgeDescription>Eliminations</PlacementBadgeDescription>
                 <PlacementBadgePoints>+2 Point</PlacementBadgePoints>
               </div>
             </PlacementBadge>
-            <PlacementBadge>
-              <PlacementBadgeIcon src="/images/badges/5th.png" alt="Rank" />
-              <div>
-                <PlacementBadgeDescription>5th Place</PlacementBadgeDescription>
-                <PlacementBadgePoints>+2 Point</PlacementBadgePoints>
-              </div>
-            </PlacementBadge>
-          </PlacementItem>
-          <PlacementItem>
-            <PlacementBadge>
-              <PlacementBadgeIcon src="/images/badges/6th.png" alt="Rank" />
-              <div>
-                <PlacementBadgeDescription>6st Place</PlacementBadgeDescription>
-                <PlacementBadgePoints>+2 Point</PlacementBadgePoints>
-              </div>
-            </PlacementBadge>
-            <PlacementBadge>
-              <PlacementBadgeIcon src="/images/badges/7th.png" alt="Rank" />
-              <div>
-                <PlacementBadgeDescription>7th Place</PlacementBadgeDescription>
-                <PlacementBadgePoints>+1 Point</PlacementBadgePoints>
-              </div>
-            </PlacementBadge>
-            <PlacementBadge>
-              <PlacementBadgeIcon src="/images/badges/8th.png" alt="Rank" />
-              <div>
-                <PlacementBadgeDescription>8th Place</PlacementBadgeDescription>
-                <PlacementBadgePoints>+1 Point</PlacementBadgePoints>
-              </div>
-            </PlacementBadge>
-            <PlacementBadge>
-              <PlacementBadgeIcon src="/images/badges/9th.png" alt="Rank" />
-              <div>
-                <PlacementBadgeDescription>9th Place</PlacementBadgeDescription>
-                <PlacementBadgePoints>+1 Point</PlacementBadgePoints>
-              </div>
-            </PlacementBadge>
-            <PlacementBadge>
-              <PlacementBadgeIcon src="/images/badges/10th.png" alt="Rank" />
-              <div>
-                <PlacementBadgeDescription>10th Place</PlacementBadgeDescription>
-                <PlacementBadgePoints>+1 Point</PlacementBadgePoints>
-              </div>
-            </PlacementBadge>
-            <PlacementBadge>
-              <PlacementBadgeIcon src="/images/badges/15th.png" alt="Rank" />
-              <div>
-                <PlacementBadgeDescription>15th Place</PlacementBadgeDescription>
-                <PlacementBadgePoints>+1 Point</PlacementBadgePoints>
-              </div>
-            </PlacementBadge>
-
-          </PlacementItem>
+            <Button style={{ marginTop: 30 }}>View full rules</Button>
+          </PlacementBottom>
         </PlacementContainer>
-        <PlacementBottom>
-          <Title>Gameplay scoring</Title>
-          <PlacementBadge>
-            <PlacementBadgeIcon src="/images/badges/Elimi.png" alt="Rank" />
-            <div>
-              <PlacementBadgeDescription>Eliminations</PlacementBadgeDescription>
-              <PlacementBadgePoints>+2 Point</PlacementBadgePoints>
-            </div>
-          </PlacementBadge>
-          <Button style={{ marginTop: 30 }}>View full rules</Button>
-        </PlacementBottom>
+
       </PlacementRoot>
+
     </Container>
   </Root>
 );

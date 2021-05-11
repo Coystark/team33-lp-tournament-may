@@ -6,7 +6,6 @@ export const Container = styled.div`
   margin: 90px 20px 90px 20px;
   width: 100%;
   display: flex;
-
   @media(max-width:  1445px) {
     flex-direction: column;
     align-items: center;
@@ -27,19 +26,18 @@ export const Root = styled.div`
   background-position: center center;
 
   @media(max-width: 768px) {
+    background: #4d0c66;
+  }
+
+  @media(max-width: 768px) {
     #stagesArrow {
       display: none;
     }
   }
 `;
 
-export const BigTitle = styled.div`
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: 0px 0px 8px rgb(255 0 0 / 75%);
-
+export const HeaderTitle = styled(_Title)`
   @media(max-width: 480px) {
-    font-size: 40px;
     text-align: center;
   }
 `;
@@ -100,34 +98,28 @@ export const PlacementRoot = styled.div`
 `;
 
 export const PlacementTitle = styled(_Title)`
-  text-align: center;
-  padding-bottom: 30px;
+
 `;
 
 export const PlacementContainer = styled.div`
-  margin-left: 150px;
   display: flex;
   width: 100%;
+  flex-direction: column;
+  align-items: center;
+`;
 
-  @media(max-width:  1445px) {
-    margin-left: 0;
-    justify-content: space-around;
-  }
-
-  @media(max-width:  480px) {
-    margin-left: 0;
-    justify-content: space-between;
-  }
-
+export const PlacementAllItems = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  justify-content: space-around;
+  width: 100%;
 `;
 
 export const PlacementItem = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media(max-width: 480px) {
-    margin: 0!important;
-  }
 `;
 
 export const PlacementBadge = styled.div`
@@ -164,14 +156,8 @@ export const PlacementBadgePoints = styled.div`
 export const PlacementBottom = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: start;
-  margin-left: 150px;
   margin-top: 30px;
-
-  @media(max-width: 480px) {
-    margin-left: 0;
-    align-items: center;
-  }
+  align-items: center;
 `;
 
 export const Title = styled(_Title)`

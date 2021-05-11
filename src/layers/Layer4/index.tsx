@@ -86,11 +86,12 @@ const Layer4: React.FC = () => (
         </GrandFinaleContainer>
       </QualifiersContainer>
       <GivewayContainer>
-        <Title>Stream Giveaway</Title>
-        <GivewayDescription>
-          Watch the tournament for a chance to win
-        </GivewayDescription>
-        <div style={{ height: 500, width: 800 }} />
+        <div>
+          <Title>Stream Giveaway</Title>
+          <GivewayDescription>
+            Watch the tournament for a chance to win
+          </GivewayDescription>
+        </div>
         <GivewayBottom>
           <GivewayButton href="/#">
             <Button style={{ display: 'inline-block' }}>Giveaway Rules</Button>

@@ -1,7 +1,7 @@
+import { Title } from '@/components/index';
 import React from 'react';
 import {
   Root,
-  Title,
   Description,
   CardsContainer,
   Card,
@@ -17,7 +17,7 @@ import {
 
 const Layer2: React.FC = () => (
   <Root>
-    <Title>
+    <Title big>
       Team 33 Championship Series 2021
     </Title>
     <Description>

@@ -3,7 +3,7 @@ import { IContainerQuestionsProps } from './types';
 
 export const Container = styled.div`
   max-width: 1500px;
-  margin: 90px 20px 90px 20px;
+  padding: 90px 20px 90px 20px;
   width: 100%;
   position: absolute;
     
@@ -33,12 +33,11 @@ export const Root = styled.div`
   align-items: center;
   width: 100%;
   min-height: 1080px;
-  // background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
 
   background: url("images/layer5bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
 `;
 
 export const Title = styled.div`
@@ -51,8 +50,6 @@ export const ContainerQuestions = styled.div<IContainerQuestionsProps>`
   opacity: ${(props) => (props.show ? '1' : '0')};
   height: ${(props) => (props.show ? 'auto' : '0')};
   overflow: hidden;
-
-}
 `;
 
 export const Question = styled.div`
