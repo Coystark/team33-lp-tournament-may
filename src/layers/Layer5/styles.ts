@@ -5,7 +5,10 @@ export const Container = styled.div`
   max-width: 1500px;
   padding: 90px 20px 90px 20px;
   width: 100%;
-  position: absolute;
+
+  @media(min-width: 769px) {
+    position: absolute;
+  }
     
  /* height: 700px;
   overflow-y: auto;
@@ -30,14 +33,16 @@ export const Root = styled.div`
   background-color: #3f0d62;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
-  min-height: 1080px;
 
   background: url("images/layer5bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+
+  @media(min-width: 769px) {
+    min-height: 1080px;
+  }
 `;
 
 export const Title = styled.div`
