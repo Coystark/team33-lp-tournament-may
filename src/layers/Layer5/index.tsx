@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  Container, Root, Title, Question, Answer, HR, Button, ViewMore, ContainerQuestions, ContaninerFAQ,
+  Container, Root, Title, Question, Answer, HR, Button, ViewMore, ContainerQuestions,
 } from './styles';
 
 const faq = [
