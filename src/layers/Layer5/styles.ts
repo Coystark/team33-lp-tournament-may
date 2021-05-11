@@ -5,6 +5,25 @@ export const Container = styled.div`
   max-width: 1500px;
   margin: 90px 20px 90px 20px;
   width: 100%;
+  position: absolute;
+    
+ /* height: 700px;
+  overflow-y: auto;
+  overflow-x: auto;
+  
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: white;
+    background-color: white;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: purple;
+    background-color: purple;
+  }*/
 `;
 
 export const Root = styled.div`
@@ -32,6 +51,7 @@ export const ContainerQuestions = styled.div<IContainerQuestionsProps>`
   opacity: ${(props) => (props.show ? '1' : '0')};
   height: ${(props) => (props.show ? 'auto' : '0')};
   overflow: hidden;
+
 }
 `;
 

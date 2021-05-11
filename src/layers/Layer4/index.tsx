@@ -17,7 +17,7 @@ import {
   GrandFinaleTitle,
   GivewayContainer,
   GivewayDescription,
-  GivewayImg,
+  // GivewayImg,
   GivewayBottom,
   GivewayButton,
   GivewayCorsairLogo,
@@ -90,7 +90,7 @@ const Layer4: React.FC = () => (
         <GivewayDescription>
           Watch the tournament for a chance to win
         </GivewayDescription>
-        <GivewayImg src="/images/giveway-bg.png" alt="Giveaway" />
+        <div style={{ height: 500, width: 800 }} />
         <GivewayBottom>
           <GivewayButton href="/#">
             <Button style={{ display: 'inline-block' }}>Giveaway Rules</Button>

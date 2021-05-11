@@ -64,6 +64,7 @@ export const SponsorsTitle = styled.div`
 
 export const Sponsors = styled.img`
   max-width: 100%;
+  width: 500px;
   height: auto;
 `;
 
