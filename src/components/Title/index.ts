@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 interface Props {
-  big: boolean;
-  medium: boolean;
+  big?: boolean;
+  medium?: boolean;
 }
 
 const Title = styled.div<Props>`
@@ -25,5 +25,10 @@ ${(props) => props.medium && `
     text-shadow: 0px 0px 8px rgb(252 218 247 / 75%);
   `}
 `;
+
+Title.defaultProps = {
+  big: false,
+  medium: false,
+};
 
 export default Title;
