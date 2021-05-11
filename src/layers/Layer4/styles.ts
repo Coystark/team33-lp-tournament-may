@@ -13,10 +13,17 @@ export const Container = styled.div`
 `;
 
 export const Root = styled.div`
-  background-color: #3f0d62;
+  //background-color: #3f0d62;
   display: flex;
   justify-content: center;
   width: 100%;
+
+  background: url("images/layer4bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top top;
+
+
 `;
 
 export const QualifiersContainer = styled.div`

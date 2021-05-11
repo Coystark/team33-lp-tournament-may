@@ -14,10 +14,16 @@ export const Container = styled.div`
 `;
 
 export const Root = styled.div`
-  background-color: #3f0d62;
+  //background-color: #3f0d62;
   display: flex;
   justify-content: center;
   width: 100%;
+  min-height: 1080px;
+
+  background: url("images/layer3bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
 
   @media(max-width: 768px) {
     #stagesArrow {

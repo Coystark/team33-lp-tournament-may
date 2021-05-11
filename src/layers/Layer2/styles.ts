@@ -4,7 +4,8 @@ import { PogText } from '@/components/index';
 
 export const Root = styled.div`
   width: 100%;
-  background-color: #3f0d62;
+  min-height: 100vh;
+  // background-color: #3f0d62;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,6 +15,12 @@ export const Root = styled.div`
   @media(max-width: 768px) {
     padding: 90px 20px 90px 20px;
   }
+
+  background: url("images/layer2bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 1080px;
 `;
 
 export const Title = styled.div`

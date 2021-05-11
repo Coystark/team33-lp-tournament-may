@@ -19,7 +19,29 @@ const Layer1: React.FC = () => (
         src="/images/tournament-logo.png"
       />
       <FortniteLogo src="/images/fortnite.png" />
+
+      <div
+        style={{
+          height: '100%',
+          width: '100%',
+          position: 'absolute',
+          display: 'flex',
+          justifyContent: 'flex-end',
+          alignItems: 'flex-end',
+          marginBottom: 80,
+        }}
+      >
+
+        <div style={{
+          background: "url('/images/complement-layer1.png')",
+          width: '100%',
+          height: '130px',
+        }}
+        />
+
+      </div>
     </InsideVideo>
+
   </>
 );
 
