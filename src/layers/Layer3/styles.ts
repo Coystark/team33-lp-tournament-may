@@ -23,7 +23,7 @@ export const Root = styled.div`
   background: url("images/layer3bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-
+  background-position: center center;
 
   @media(max-width: 768px) {
     #stagesArrow {

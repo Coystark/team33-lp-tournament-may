@@ -17,13 +17,12 @@ export const Root = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  min-height: 1080px;
 
   background: url("images/layer4bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top top;
-
-
+  background-position: center center;
 `;
 
 export const QualifiersContainer = styled.div`

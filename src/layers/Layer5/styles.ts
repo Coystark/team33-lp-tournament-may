@@ -12,7 +12,13 @@ export const Root = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+  min-height: 1080px;
+  // background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+
+  background: url("images/layer5bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 `;
 
 export const Title = styled.div`

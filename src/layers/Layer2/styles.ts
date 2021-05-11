@@ -19,6 +19,8 @@ export const Root = styled.div`
   background: url("images/layer2bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+
 
   min-height: 1080px;
 `;
