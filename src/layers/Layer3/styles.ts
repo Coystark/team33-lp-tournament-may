@@ -6,9 +6,18 @@ export const Container = styled.div`
   margin: 90px 20px 90px 20px;
   width: 100%;
   display: flex;
+  flex-direction: column;
+
+  @media(max-width:  1445px) {
+    align-items: center;
+  }
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+
   @media(max-width:  1445px) {
     flex-direction: column;
-    align-items: center;
   }
 `;
 
@@ -37,8 +46,12 @@ export const Root = styled.div`
 `;
 
 export const HeaderTitle = styled(_Title)`
-  @media(max-width: 480px) {
+  @media(max-width:  1445px) {
     text-align: center;
+  }
+
+  @media(max-width: 768px) {
+    text-align: left;
   }
 `;
 

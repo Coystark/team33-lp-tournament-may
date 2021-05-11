@@ -7,9 +7,7 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
 
-  @media(max-width: 768px) {
-    flex-direction: column;
-  }
+  flex-direction: column;
 `;
 
 export const Root = styled.div`
@@ -24,6 +22,14 @@ export const Root = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const QualifiersContainer = styled.div`
