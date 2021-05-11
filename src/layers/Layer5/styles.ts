@@ -11,6 +11,7 @@ export const Root = styled.div`
   background-color: #3f0d62;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 1080px;
   // background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
