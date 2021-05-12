@@ -11,6 +11,7 @@ export const Root = styled.div<ILogo>`
   background-color: ${(props) => (props.scrolled ? '#00000066' : 'none')};
   align-items: center;
   transition: 0.5s;
+  max-width: 1920px;
 
   @media(max-width: 480px) {
    justify-content: center;

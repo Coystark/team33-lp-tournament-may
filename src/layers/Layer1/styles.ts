@@ -5,6 +5,7 @@ export const Root = styled.video`
   height: 100vh;
   width: 100%;
   position: absolute;
+  max-width: 1920px;
 `;
 
 export const InsideVideo = styled.div`

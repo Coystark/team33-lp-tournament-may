@@ -14,6 +14,7 @@ export const Container = styled.div`
 `;
 
 export const Root = styled.div`
+  max-width: 1920px;
   background-color: black;
   display: flex;
   justify-content: center;

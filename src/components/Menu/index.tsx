@@ -22,7 +22,7 @@ const Menu: React.FC = () => {
   return (
     <Root scrolled={scrolled}>
       <Logo src="/images/team33-logo.png" />
-      <a href="#">
+      <a href="/#">
         <Button>
           Register now
         </Button>

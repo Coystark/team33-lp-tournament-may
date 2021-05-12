@@ -5,6 +5,7 @@ import { PogText } from '@/components/index';
 export const Root = styled.div`
   width: 100%;
   min-height: 1080px;
+  max-width: 1920px;
   display: flex;
   flex-direction: column;
   align-items: center;

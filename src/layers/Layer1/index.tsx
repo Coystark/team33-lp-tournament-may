@@ -27,6 +27,7 @@ const Layer1: React.FC = () => (
         width: '100%',
         display: 'flex',
         alignItems: 'flex-end',
+        justifyContent: 'center',
       }}
       >
         <div style={{
@@ -36,6 +37,7 @@ const Layer1: React.FC = () => (
           backgroundSize: 'cover',
           width: '100%',
           height: '130px',
+          maxWidth: '1920px;',
         }}
         />
       </div>

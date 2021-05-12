@@ -16,6 +16,7 @@ export const Root = styled.div`
   justify-content: center;
   width: 100%;
   min-height: 1080px;
+  max-width: 1920px;
 
   background: url("images/layer4bg.jpg");
   background-size: cover;

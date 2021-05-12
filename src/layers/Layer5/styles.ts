@@ -34,6 +34,7 @@ export const Root = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  max-width: 1920px;
 
   background: url("images/layer5bg.jpg");
   background-size: cover;

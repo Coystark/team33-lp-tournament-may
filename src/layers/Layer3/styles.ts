@@ -28,6 +28,7 @@ export const Root = styled.div`
   align-items: center;
   width: 100%;
   min-height: 1080px;
+  max-width: 1920px;
 
   background: url("images/layer3bg.jpg");
   background-size: cover;

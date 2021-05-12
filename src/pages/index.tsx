@@ -18,6 +18,8 @@ const theme = {
 };
 
 export default function Home() {
+  // return <Teste />;
+
   return (
     <>
       <Head>
@@ -41,18 +43,38 @@ export default function Home() {
         <meta name="twitter:image:alt" content="Team 33 Fortnite Tournament" />
 
       </Head>
-      <Menu />
       <ThemeProvider theme={theme}>
-        <Layer1 />
-        <Layer2 />
-        <Layer3 />
-        <Layer4 />
-        <Layer5 />
-        <Layer6 />
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          flexDirection: 'column',
+          width: '100%',
+          background: 'rgb(55, 14, 80)',
+        }}
+        >
+          <Menu />
+
+          <Layer1 />
+          <Layer2 />
+          <Layer3 />
+          <Layer4 />
+          <Layer5 />
+          <Layer6 />
+        </div>
       </ThemeProvider>
     </>
   );
 }
+
+/*
+            <Layer1 />
+          <Layer2 />
+          <Layer3 />
+          <Layer4 />
+          <Layer5 />
+          <Layer6 />
+
+*/
 
 /*
         <Layer1 />
