@@ -24,7 +24,7 @@ import {
 } from './styles';
 
 const Layer3: React.FC = () => (
-  <Root>
+  <Root id="scoring-rules">
     <Container>
       <div>
         <HeaderTitle medium>Scoring & Rules</HeaderTitle>

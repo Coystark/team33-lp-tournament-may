@@ -31,7 +31,7 @@ const Layer5: React.FC = () => {
   const [showFaq, setShowFaq] = useState(false);
 
   return (
-    <Root>
+    <Root id="faqs">
       <Container>
         <Title medium>FAQs</Title>
         <Question>{faq[0].question}</Question>

@@ -1,10 +1,46 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/index';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faBars,
+} from '@fortawesome/free-solid-svg-icons';
 
-import { Root, Logo } from './styles';
+import {
+  Root,
+  Logo,
+  LinkContainer,
+  LinkItem,
+  ToggleMenu,
+  Left,
+  Overlay,
+} from './styles';
+
+const links = [
+  {
+    name: 'Overview',
+    href: '/#overview',
+  },
+  {
+    name: 'Scoring & Rules',
+    href: '/#scoring-rules',
+  },
+  {
+    name: 'Prizing',
+    href: '/#prizing',
+  },
+  {
+    name: 'FAQs',
+    href: '/#faqs',
+  },
+  {
+    name: 'Discord',
+    href: '/#discord',
+  },
+];
 
 const Menu: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const listenToScroll = () => {
     const top = document.body.scrollTop || document.documentElement.scrollTop;
@@ -20,14 +56,35 @@ const Menu: React.FC = () => {
   }, []);
 
   return (
-    <Root scrolled={scrolled}>
-      <Logo src="/images/team33-logo.png" />
-      <a href="/#">
-        <Button>
-          Register now
-        </Button>
-      </a>
-    </Root>
+    <>
+      <Root scrolled={scrolled}>
+        <Left>
+          <Logo src="/images/team33-logo.png" />
+          <ToggleMenu onClick={() => setShowMenu((value) => !value)}>
+            <FontAwesomeIcon icon={faBars} />
+          </ToggleMenu>
+
+        </Left>
+
+        <LinkContainer scrolled={scrolled} show={showMenu}>
+          {links.map((item) => (
+            <LinkItem href={item.href} key={item.name} onClick={() => setShowMenu(false)}>
+              {item.name}
+            </LinkItem>
+          ))}
+        </LinkContainer>
+
+        <a href="/#">
+          <Button>
+            Register now
+          </Button>
+        </a>
+
+      </Root>
+
+      <Overlay show={showMenu} onClick={() => setShowMenu((value) => !value)} />
+
+    </>
   );
 };
 

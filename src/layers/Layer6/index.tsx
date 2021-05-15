@@ -19,7 +19,7 @@ import {
 } from './styles';
 
 const Layer6: React.FC = () => (
-  <Root>
+  <Root id="discord">
     <Container>
       <SocialMediasContainer>
         <SocialMediasTitle>Connect with Team33</SocialMediasTitle>

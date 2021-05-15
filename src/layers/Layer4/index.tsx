@@ -25,8 +25,7 @@ import {
 } from './styles';
 
 const Layer4: React.FC = () => (
-  <Root>
-
+  <Root id="prizing">
     <Container>
       <Title medium>Prizing</Title>
       <QualifiersDescription style={{ paddingBottom: 20 }}>
