@@ -3,6 +3,8 @@ import PogText from './PogText';
 import Container from './Container';
 import Menu from './Menu';
 import Title from './Title';
+import Modal from './Modal';
+import Rules from './Rules';
 
 export {
   PogText,
@@ -10,4 +12,6 @@ export {
   Container,
   Menu,
   Title,
+  Modal,
+  Rules,
 };

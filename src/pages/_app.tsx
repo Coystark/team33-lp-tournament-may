@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import '../styles/globals.css';
+// import '../components/Modal/styles.css';
 
 function MyApp({ Component, pageProps }: { Component: any, pageProps: any }) {
   return <Component {...pageProps} />;

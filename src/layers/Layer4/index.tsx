@@ -101,7 +101,7 @@ const Layer4: React.FC = () => (
             </GivewayDescription>
           </div>
           <GivewayBottom>
-            <GivewayButton href="/#">
+            <GivewayButton>
               <Button style={{ display: 'inline-block' }}>Giveaway Rules</Button>
             </GivewayButton>
             <GivewayCorsairLogo src="images/corsair.png" alt="Corsair" />

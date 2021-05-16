@@ -37,7 +37,7 @@ const Layer1: React.FC = () => (
           backgroundSize: 'cover',
           width: '100%',
           height: '130px',
-          maxWidth: '1920px;',
+          maxWidth: '1920px',
         }}
         />
       </div>
