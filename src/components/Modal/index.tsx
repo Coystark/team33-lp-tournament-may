@@ -34,9 +34,6 @@ function ReactModalAdapter(props: IProps) {
       overlayClassName={overlayClassName}
       ariaHideApp={false}
     >
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 20 }}>
-        <Button onClick={onRequestClose}>CLOSE</Button>
-      </div>
       {children}
       <div style={{ display: 'flex', justifyContent: 'center', marginTop: 20 }}>
         <Button onClick={onRequestClose}>CLOSE</Button>
