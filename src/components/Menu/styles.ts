@@ -51,7 +51,7 @@ export const LinkContainer = styled.div<ILinkContainer>`
 `;
 
 export const LinkItem = styled.a`
-  padding: 0 10px 0 10px;
+  padding: 0 30px 0 30px;
   color: white;
   transition: 0.5s;
 

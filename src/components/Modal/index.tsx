@@ -58,7 +58,7 @@ const StyledModal = styled(ReactModalAdapter)`
   }
 
   &__content {
-    height: 700px;
+    max-height: 700px;
     max-width: 700px;
     overflow: scroll;
     overflow-x: hidden;
