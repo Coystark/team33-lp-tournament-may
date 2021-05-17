@@ -5,19 +5,19 @@ import styled from 'styled-components';
 import Button from '../Button';
 
 interface IProps {
-  className: string;
   children: any;
   isOpen: boolean;
   onRequestClose: () => void;
   contentLabel: string;
+  className?: string;
 }
 
-function ReactModalAdapter(props: IProps) {
+const ReactModalAdapter: React.FC<IProps> = (props: IProps) => {
   const {
-    children,
     isOpen,
     onRequestClose,
     contentLabel,
+    children,
     className,
   } = props;
 
@@ -40,7 +40,11 @@ function ReactModalAdapter(props: IProps) {
       </div>
     </ReactModal>
   );
-}
+};
+
+ReactModalAdapter.defaultProps = {
+  className: '',
+};
 
 const StyledModal = styled(ReactModalAdapter)`
   &__overlay {
@@ -58,6 +62,7 @@ const StyledModal = styled(ReactModalAdapter)`
     max-width: 700px;
     overflow: scroll;
     overflow-x: hidden;
+    overflow-y: auto;
     background: #4d0c66;
     border-radius: 1;
     border: 2px solid #9039b5;
