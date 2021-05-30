@@ -107,7 +107,6 @@ const Menu: React.FC = () => {
         isOpen={signUpModal}
         onRequestClose={() => setSignUpModal(false)}
         contentLabel="Register Now"
-        register
       >
         <div style={{
           position: 'relative',
