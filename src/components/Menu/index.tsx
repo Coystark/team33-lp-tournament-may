@@ -81,7 +81,7 @@ const Menu: React.FC = () => {
         </LinkContainer>
 
         <Button onClick={() => {
-          popupWindow('/form.html', '', window, 600, 900);
+          popupWindow('/form2.html', '', window, 600, 900);
         }}
         >
           Register now
