@@ -3,7 +3,7 @@ import PogText from './PogText';
 import Container from './Container';
 import Menu from './Menu';
 import Title from './Title';
-import Modal from './Modal';
+import { StyledModal as Modal, RegisterModal } from './Modal';
 import Rules from './Rules';
 
 export {
@@ -13,5 +13,6 @@ export {
   Menu,
   Title,
   Modal,
+  RegisterModal,
   Rules,
 };
