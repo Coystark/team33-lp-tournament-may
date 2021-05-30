@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, RegisterModal } from '@/components/index';
+import { Button } from '@/components/index';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBars,
@@ -47,7 +47,6 @@ function popupWindow(url: string, windowName: string, win: any, w: number, h: nu
 const Menu: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const [signUpModal, setSignUpModal] = useState(false);
 
   const listenToScroll = () => {
     const top = document.body.scrollTop || document.documentElement.scrollTop;
@@ -60,17 +59,6 @@ const Menu: React.FC = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', listenToScroll);
-
-    /* const script = document.createElement('script');
-    script.async = true;
-
-    script.src = 'https://forms.aweber.com/form/13/760219313.js';
-
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    }; */
   }, []);
 
   return (
@@ -93,39 +81,13 @@ const Menu: React.FC = () => {
         </LinkContainer>
 
         <Button onClick={() => {
-          // setSignUpModal(true)
-          // window.open('/form.html', '', 'width=600,height=1000');
-          popupWindow('/form.html', '', window, 600, 1000);
+          popupWindow('/form.html', '', window, 600, 900);
         }}
         >
           Register now
         </Button>
 
       </Root>
-
-      <RegisterModal
-        isOpen={signUpModal}
-        onRequestClose={() => setSignUpModal(false)}
-        contentLabel="Register Now"
-      >
-        <div style={{
-          position: 'relative',
-          width: '100%',
-          height: '100%',
-        }}
-        >
-          <iframe
-            src="/form.html"
-            title="Iframe Example"
-            style={{
-              width: '100%',
-              height: '100%',
-              display: 'flex',
-              flexGrow: 1,
-            }}
-          />
-        </div>
-      </RegisterModal>
 
       <Overlay show={showMenu} onClick={() => setShowMenu((value) => !value)} />
 
