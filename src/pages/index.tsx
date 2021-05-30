@@ -28,7 +28,7 @@ export default function Home() {
 
         {/* Essential META Tags */ }
         <meta property="og:title" content="Team 33 Fortnite Tournament" />
-        <meta property="og:description" content="Drop into Fortnite with your duo and join this year's free-to-enter Team 33 Championship Series. Signup and compete for your chance to win." />
+        <meta property="og:description" content="Drop into Fortnite and join this year's free-to-enter Team 33 Championship Series. Signup and compete for your chance to win." />
         <meta property="og:image" content="/images/tournament-logo.png" />
         <meta property="og:url" content="https://team33gaming.com/" />
         <meta name="twitter:card" content="summary_large_image" />

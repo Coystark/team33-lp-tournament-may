@@ -21,7 +21,7 @@ const Layer2: React.FC = () => (
       Team 33 Championship Series 2021
     </Title>
     <Description>
-      Drop into Fortnite with your duo and join this year&apos;s
+      Drop into Fortnite and join this year&apos;s
       free-to-enter Team 33 Championship Series.
       Signup and compete for your chance to win.
     </Description>
