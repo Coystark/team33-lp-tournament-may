@@ -45,21 +45,21 @@ const Layer4: React.FC = () => (
                 <RewardBadge src="/images/badges/1st.png" alt="1st" />
                 <div>
                   <RewardTitle>Cash Prize</RewardTitle>
-                  <RewardCash>$700</RewardCash>
+                  <RewardCash>$1000</RewardCash>
                 </div>
               </Reward>
               <Reward>
                 <RewardBadge src="/images/badges/2nd.png" alt="2nd" />
                 <div>
                   <RewardTitle>Cash Prize</RewardTitle>
-                  <RewardCash>$450</RewardCash>
+                  <RewardCash>$700</RewardCash>
                 </div>
               </Reward>
               <Reward>
                 <RewardBadge src="/images/badges/3rd.png" alt="3rd" />
                 <div>
                   <RewardTitle>Cash Prize</RewardTitle>
-                  <RewardCash>$300</RewardCash>
+                  <RewardCash>$500</RewardCash>
                 </div>
               </Reward>
             </RewardsGridItem>
@@ -68,7 +68,7 @@ const Layer4: React.FC = () => (
                 <RewardBadge src="/images/badges/4th.png" alt="4th" />
                 <div>
                   <RewardTitle>Cash Prize</RewardTitle>
-                  <RewardCash>$200</RewardCash>
+                  <RewardCash>$250</RewardCash>
                 </div>
               </Reward>
               <Reward>
@@ -87,10 +87,10 @@ const Layer4: React.FC = () => (
               </Reward>
             </RewardsGridItem>
           </RewardsGridContainer>
-          <Title>TOP 2 GRAND FINALE</Title>
+          <Title>Most Kills all tournament</Title>
           <GrandFinaleContainer>
-            <GrandFinaleImg src="/images/badges/1v1.png" alt="1v1" />
-            <GrandFinaleTitle>WINNER: $1,000</GrandFinaleTitle>
+            <GrandFinaleImg src="/images/badges/1st.png" alt="1v1" />
+            <GrandFinaleTitle>WINNER: $200</GrandFinaleTitle>
           </GrandFinaleContainer>
         </QualifiersContainer>
         <GivewayContainer>
