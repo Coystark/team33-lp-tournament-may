@@ -29,15 +29,13 @@ const Layer4: React.FC = () => (
     <Container>
       <Title medium>Prizing</Title>
       <QualifiersDescription style={{ paddingBottom: 20 }}>
-        Each Quarterly Series Will feature a prize pool of $40,000 cash
-        & $25,000 Logitech gear. Here&apos;s the breakdown per series which is
-        happening four times this year.
+        Each Series Will feature a prize pool of $3,300
       </QualifiersDescription>
       <Wrapper>
         <QualifiersContainer>
           <Title>Qualifiers</Title>
           <QualifiersDescription>
-            All prize amounts will be split evenly between both players
+            All prize amounts
           </QualifiersDescription>
           <RewardsGridContainer>
             <RewardsGridItem>
