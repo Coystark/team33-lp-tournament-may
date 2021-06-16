@@ -63,9 +63,9 @@ const Layer3: React.FC = () => {
       <Modal
         isOpen={stage1Modal}
         onRequestClose={() => setStage1Modal(false)}
-        contentLabel="Stage 1"
+        contentLabel="Qualifier 1"
       >
-        <strong><p>Stage 1</p></strong>
+        <strong><p>Qualifier 1</p></strong>
         <ul>
           <li>Officially streamed on Twitch @OfficialTeam33</li>
           <li>2 Day event, 7 games played on both days</li>
@@ -79,9 +79,9 @@ const Layer3: React.FC = () => {
       <Modal
         isOpen={stage2Modal}
         onRequestClose={() => setStage2Modal(false)}
-        contentLabel="Stage 2"
+        contentLabel="Qualifier 2"
       >
-        <strong><p>Stage 2</p></strong>
+        <strong><p>Qualifier 2</p></strong>
         <ul>
           <li>
             Each player will play against our MYSTERY player in creative mode,
@@ -94,9 +94,9 @@ const Layer3: React.FC = () => {
       <Modal
         isOpen={stage3Modal}
         onRequestClose={() => setStage3Modal(false)}
-        contentLabel="Stage 3"
+        contentLabel="Qualifier 3"
       >
-        <strong><p>Stage 3</p></strong>
+        <strong><p>Qualifier 3</p></strong>
         <ul>
           <li>
             Top 2 players will play head to head in realistic
