@@ -7,6 +7,7 @@ import {
   StagesGridContainer,
   StagesGrid,
   StageGridImg,
+  StagesRectangle,
   Title,
   PlacementRoot,
   PlacementTitle,
@@ -120,78 +121,43 @@ const Layer3: React.FC = () => {
                 onClick={() => setGrandFinaleModal(true)}
                 onKeyPress={() => setGrandFinaleModal(true)}
                 role="button"
-                style={{ cursor: 'pointer' }}
+                style={{ cursor: 'pointer', display: 'flex', justifyContent: 'center' }}
                 tabIndex={0}
+
               >
-                <img
+                <StagesRectangle
                   src="/images/layer3/retangulo.png"
                   alt="Series Grand Finale"
-                  style={{ height: 'auto', maxWidth: '100%' }}
                 />
               </div>
               <StagesGridContainer>
                 <StagesGrid>
-                  <div>
-                    <div
-                      id="stagesArrow"
-                      style={{
-                        position: 'absolute',
-                        margin: '45px 321px',
-                      }}
-                    >
-                      <img src="/images/layer3/small-arrow.png" alt="Arrow" />
-                    </div>
-                    <div
-                      onClick={() => setStage2Modal(true)}
-                      onKeyPress={() => setStage2Modal(true)}
-                      role="button"
-                      style={{ cursor: 'pointer' }}
-                      tabIndex={0}
-                    >
-                      <StageGridImg src="/images/layer3/stage-2.png" alt="Stage 2 - Click for details." />
-                    </div>
+                  <div
+                    onClick={() => setStage1Modal(true)}
+                    onKeyPress={() => setStage1Modal(true)}
+                    role="button"
+                    style={{ cursor: 'pointer' }}
+                    tabIndex={0}
+                  >
+                    <StageGridImg src="/images/layer3/stage-1.png" alt="Stage 1 - Click for details." />
                   </div>
-                  <div id="stage3">
-                    <div
-                      id="stagesArrow"
-                      style={{
-                        position: 'absolute',
-                        margin: '-192px 321px',
-                      }}
-                    >
-                      <img src="/images/layer3/big-arrow.png" alt="Arrow" />
-                    </div>
-                    <div
-                      onClick={() => setStage3Modal(true)}
-                      onKeyPress={() => setStage3Modal(true)}
-                      role="button"
-                      style={{ cursor: 'pointer' }}
-                      tabIndex={0}
-                    >
-                      <StageGridImg src="/images/layer3/stage-3.png" alt="Stage 3 - Click for details." />
-                    </div>
+                  <div
+                    onClick={() => setStage2Modal(true)}
+                    onKeyPress={() => setStage2Modal(true)}
+                    role="button"
+                    style={{ cursor: 'pointer' }}
+                    tabIndex={0}
+                  >
+                    <StageGridImg src="/images/layer3/stage-2.png" alt="Stage 2 - Click for details." />
                   </div>
-                </StagesGrid>
-                <StagesGrid style={{ justifyContent: 'space-around' }}>
-                  <div>
-                    <div
-                      id="stagesArrow"
-                      style={{
-                        position: 'absolute',
-                        margin: '-30px 0 0 -72px',
-                      }}
-                    >
-                      <img src="/images/layer3/medium-arrow.png" alt="Arrow" />
-                    </div>
-                    <div
-                      onClick={() => setStage1Modal(true)}
-                      onKeyPress={() => setStage1Modal(true)}
-                      role="button"
-                      style={{ cursor: 'pointer' }}
-                      tabIndex={0}
-                    >
-                      <StageGridImg src="/images/layer3/stage-1.png" alt="Stage 1 - Click for details." />
-                    </div>
+                  <div
+                    onClick={() => setStage3Modal(true)}
+                    onKeyPress={() => setStage3Modal(true)}
+                    role="button"
+                    style={{ cursor: 'pointer' }}
+                    tabIndex={0}
+                  >
+                    <StageGridImg src="/images/layer3/stage-3.png" alt="Stage 3 - Click for details." />
                   </div>
                 </StagesGrid>
               </StagesGridContainer>

@@ -72,10 +72,19 @@ export const Description = styled.div`
 export const StagesContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 720px;
+  width: 820px;
 
   @media(max-width: 768px) {
     width: auto;
+  }
+`;
+
+export const StagesRectangle = styled.img`
+  height: auto;
+  max-width: 80%;
+
+  @media(max-width: 768px) {
+    max-width: 100%;
   }
 `;
 
@@ -102,6 +111,7 @@ export const StagesGrid = styled.div`
 export const StageGridImg = styled.img`
   max-width: 100%;
   height: auto;
+  padding: 40px 20px 20px 20px;
 `;
 
 /**
