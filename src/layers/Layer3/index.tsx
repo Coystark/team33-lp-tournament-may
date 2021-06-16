@@ -7,6 +7,7 @@ import {
   StagesGridContainer,
   StagesGrid,
   StageGridImg,
+  StagesLines,
   StagesRectangle,
   Title,
   PlacementRoot,
@@ -131,6 +132,10 @@ const Layer3: React.FC = () => {
                 />
               </div>
               <StagesGridContainer>
+                <StagesLines
+                  src="/images/layer3/lines.png"
+                  alt=""
+                />
                 <StagesGrid>
                   <div
                     onClick={() => setStage1Modal(true)}

@@ -81,10 +81,23 @@ export const StagesContainer = styled.div`
 
 export const StagesRectangle = styled.img`
   height: auto;
+  margin-bottom: 83px;
   max-width: 80%;
 
   @media(max-width: 768px) {
     max-width: 100%;
+    margin-bottom: 0;
+  }
+`;
+
+export const StagesLines = styled.img`
+  position: absolute;
+  margin-Top: -92px;
+  width: 550px;
+  align-self: center;
+
+  @media(max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -101,6 +114,7 @@ export const StagesGrid = styled.div`
   @media(max-width: 768px) {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
 
     #stage3 {
       order: -1;
@@ -111,7 +125,14 @@ export const StagesGrid = styled.div`
 export const StageGridImg = styled.img`
   max-width: 100%;
   height: auto;
-  padding: 40px 20px 20px 20px;
+  padding: 0 20px 0 20px;
+
+  @media(max-width: 768px) {
+    padding: 0;
+    padding-top: 40px;
+  }
+
+  /*padding: 85px 20px 20px 20px;*/
 `;
 
 /**
